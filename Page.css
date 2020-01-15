@@ -1,0 +1,158 @@
+	html{
+		scroll-behavior:smooth;
+	}
+	#home{
+		background:transparent;
+		padding-top:120px;
+		padding-bottom:70px;
+		min-height:670px;
+		text-align: center;
+	}
+	.fadeIn{
+		animation-name:fadeIn;
+		visibility: visible;
+		animation-fill-mode: both;
+		animation-duration: 4s;
+		animation-play-state: running;
+	}
+
+	@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+
+	50%{
+		opacity:1.05;
+	}
+
+	100% {
+		opacity: 1;
+			}
+	}
+
+	.moveUp{
+		animation-name:moveUp;
+		visibility: visible;
+		animation-fill-mode: both;
+		animation-duration: 0.6s;
+		animation-play-state: running;
+	}
+
+	@keyframes moveUp {
+	0% {
+		opacity: 1;
+		transform: translateY(60px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+			}
+	}
+
+	.cloud-text-body{
+    	color:white;
+		font-size:48px;
+	}
+	h1{
+    	color:white;
+		font-family:'Comfortaa',sans-serif;		
+	}
+
+	p{
+		font-family:'Comfortaa',sans-serif;
+	}
+	
+	body {
+		margin: 0;
+		background-image:url("https://image.freepik.com/free-vector/gradient-geometric-shapes-background_52683-12505.jpg");
+		font-family:'Comfortaa',sans-serif;
+		width: device-width;
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	.flip-img{
+		border-radius:50%; 
+		width:240px;
+		height:240px;
+	}
+
+	.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	}
+	.my-hover a{
+		text-decoration: none;
+		background-color: none;
+		font-weight: bold;
+		font-size:16px;
+		padding-right: 10px;
+	}
+
+	.my-hover a.active{
+		border-bottom:2px solid #ff0f0f;
+	}
+
+	.navtext {
+		color:black;
+	}
+
+	.navtext:hover{
+		color:black;
+	}
+
+	.header {
+		padding: 10px 16px;
+		/*background-image:url("https://gifspro.com/wp-content/uploads/2018/06/Parallax-Clouds-Timelapse-04-Long-2.gif");
+		background-repeat: no-repeat;*/
+		background:transparent;
+		font-size:20px;
+		color: #000;
+		z-index:1;
+		padding-top: 10px;
+		height: 80px;
+		opacity:0.6;
+	}
+
+	@media only screen and (min-width:300px) and (max-width: 600px) {
+		#home{
+			font-size:14px;
+			align-items: center;
+			margin-left:0;
+			padding-right:5%;
+			padding-left: 0%;
+		}
+		#about{
+			padding-top:50%;
+			padding-bottom:10%;
+			height:500px; 
+		}
+		#aboutframe{
+			height:300px;
+			padding-top: 30%;
+			padding-bottom: 10%;
+		}
+		#features{
+			padding-top: 0%;
+			padding-left:0%;
+			align-items: center;
+		}
+		.flip-img{
+			border-radius: 50%;
+			width:150px;
+			height:150px;
+		}
+	  }
+
+	  @media only screen and (min-width:400px) and (max-width: 600px) {
+		#aboutframe{
+			height:550px;
+			width:100%;
+			padding-top: 30%;
+			padding-bottom: 10%;
+		}
+	}

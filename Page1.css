@@ -1,0 +1,159 @@
+  h1,h3{color:#FFFAFF;font-family: "Comfortaa", sans-serif;}
+  body,p{
+    font-family:"Comfortaa";
+    color:#F7F7F7;
+    /*background-image:url("https://image.freepik.com/free-vector/gradient-geometric-shapes-background_52683-12505.jpg");*/
+    background-color: #111725;
+    background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+    background-size: cover;
+    max-height: 450px;
+  }
+  input[type="text"] {
+    width: 100%;
+    border: 2px solid #aaa;
+    border-radius: 4px;
+    margin: 8px 0;
+    outline: none;
+    padding: 8px;
+    box-sizing: border-box;
+    font-family: 'Comfortaa';
+    transition: 0.3s;
+  }
+  input[type="password"] {
+    width: 100%;
+    border: 2px solid #aaa;
+    border-radius: 4px;
+    margin: 8px 0;
+    outline: none;
+    padding: 8px;
+    box-sizing: border-box;
+    font-family: 'Comfortaa';
+    transition: 0.3s;
+  }
+
+  input[type="text"]:focus {
+    border-color: #FFFFFF;
+    box-shadow: 0 0 8px 0 #FFFFFF;
+  }
+
+  input[type="password"]:focus {
+    border-color: #FFFAFF;
+    box-shadow: 0 0 8px 0 #FFFAFF;
+  }
+
+  .inputWithIcon input[type="text"] {
+    padding-left: 40px;
+  }
+
+  .inputWithIcon input[type="password"] {
+    padding-left: 40px;
+  }
+
+  .inputWithIcon {
+    position: relative;
+  }
+
+  .inputWithIcon i {
+    position: absolute;
+    left: 0;
+    top: 10px;
+    padding: 9px 8px;
+    color: #aaa;
+    transition: 0.3s;
+  }
+
+  .inputWithIcon input[type="text"]:focus + i {
+    color: #FFFFFF;
+  }
+
+  .inputWithIcon input[type="password"]:focus + i {
+    color: #FFFAFF;
+  }
+
+  .mytext{
+      color:#F7F7F7;
+      text-decoration:none;		
+      font-family:Actor;	
+  }
+
+    .mytext:hover{
+      color:#33A1FD;
+      text-decoration: none;
+  }
+
+  .field-icon {
+          float: right;
+          margin-right: 20px;
+          margin-top: -40px;
+          position: relative;
+          z-index: 10;
+        }
+  .mystyle{
+        text-decoration:none;
+        font-family:ubuntu;
+      }
+  .mystyle:hover{
+        background-color:grey;
+    }
+    @media only screen and (max-width: 700px) { 
+      #fadeshow1 { 
+        display: none; 
+      } 
+    }
+
+    .btn{
+			color:white;
+			font-size:18px;
+			font-family:Actor;
+			padding: 14px 20px;
+			margin: 8px 0;
+			cursor: pointer;
+			width:100%;
+			background-size:200%;
+      border-image: linear-gradient(to left,#7B4379,#DD2476,#7B4379);
+			border-image-slice: 1;
+			transition: 1s;
+    }
+    .btn:hover{
+      background-image: linear-gradient(to left,#3a1c71,#DD2476,#3a1c71);
+      background-position: right;
+      color: white;
+    }
+
+    .btn:active{
+      transform: translateY(40px);
+    }
+
+    #title{
+      padding-left:18%;
+      font-size:50px;
+      padding-top:0px;
+    }
+
+    #sub-title{
+      padding-left:20%;
+      font-size:30px;
+    }
+
+    @media only screen and (max-width: 400px) {
+      #title{
+        font-size: 30px;
+        padding-left: 20%;
+      }
+      #sub-title{
+        font-size: 15px;
+        padding-left: 20%;
+      }
+    }
+      @media only screen and (min-width: 400px) and (max-width: 900px) {
+        #title{
+          font-size: 34px;
+          padding-left: 27%;
+        }
+        #sub-title{
+          font-size: 22px;
+          padding-left:23%;
+        }
+    }
